@@ -1,13 +1,175 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jako Luik Portfolio</title>
+   <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-white font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-gray-600 shadow-lg fixed w-full top-0 z-10">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <a href="#">
+            <!-- Mobile burger menu -->
+            <div class="block lg:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Desktop menu -->
+            <ul class="hidden lg:flex space-x-4">
+                <li><a href="#about" class="text-white hover:text-lime-900">ABOUT ME</a></li>
+                <li><a href="#character" class="text-white hover:text-lime-900">CHARACTER</a></li>
+                <li><a href="#contact" class="text-white hover:text-lime-900">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- Mobile hidden menu -->
+        <div id="mobile-menu" class="hidden lg:hidden">
+            <ul class="text-white">
+                <li><a href="#about" class="block py-2 px-4">About me</a></li>
+                <li><a href="#character" class="block py-2 px-4">Character</a></li>
+                <li><a href="#" class="block py-2 px-4">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+ <!-- Header -->
+<header class="py-32 bg-gradient-to-r bg-white text-black text-center rounded-2xl bg-cover bg-center relative">
+  <img src="/assets/IMG_20210717_115855.jpg" alt="Header Image" class="absolute inset-0 object-cover w-full h-full" style="z-index: -1;">
+  <div class="container mx-auto px-4 relative flex flex-col items-center">
+      <h1 class="text-5xl font-bold leading-tight mb-4">Welcome to my portfolio page!</h1>
+      <img src="/assets/IMG_20210717_115855.jpg" alt="Portfolio Picture" class="w-32 h-32 rounded mb-4">
+      <p class="text-xl mb-8">Currently studying junior software developing at Kuressaare Vocational School.</p>
+  </div>
+</header>
+
+<!-- Section: About me -->
+<div>
+  <section id='about' class="flex my-5 lg:mx-20 pt-16">
+      <div class="grid lg:grid-cols-2 leading-6">
+          <div class=" bg-gray-600 border-gray-600 rounded-xl text-white">
+      <div class="m-5 px-10 ">
+       <h2 class="pb-5 text-2xl">About me!</h2>
+         <div class="tracking-wider">
+              <p>
+                I'm a 27-year-old young man from Saaremaa who has made a career shift and
+                chosen the path into the IT world. Currently, I'm studying to become a junior
+                software developer at Kuressaare Vocational School, and I've already gained
+                some experience in basic programming languages. I would describe myself as
+                eager to learn, cheerful, and with a positive attitude towards life. My strengths
+                lie in teamwork, motivation, and problem-solving skills. Additionally, I possess
+                technical aptitude, punctuality, and proficiency in both written and spoken
+                English.
+                
+                        </div>
+                    </div>
+                </div>
+                <div>
+    <div class="m-5 px-10">
+        <h2 class="pb-5 text-2xl">Education</h2>
+        <p class="tracking-wider">
+            <p>KURESSAARE ADULT EDUCATION CENTRE (2024-...)</p>
+            <div class="pl-5">
+              <p>*Completion of high school</p>
+              <p>*Maritime industry</p>
+                      </div>
+                      <p>KURESSAARE VOCATIONAL SCHOOL (2023-2025)</p>
+                      <div class="pl-5">
+                        <p>*Junior software developer
+                            Programming, database systems,
+                            software development, web
+                            development, web design, software
+                            testing.</p>
+                                </div>       
+                    <p>KURESSAARE VOCATIONAL SCHOOL (2013-2026)</p>
+                      <div class="pl-5">
+                        <p>*Construction finishing level 4</p>
+                                </div>        
+                    <p>KURESSAARE VOCATIONAL SCHOOL (2004-2013)</p>
+                      <div class="pl-5">
+                        <p>*Elementary and middle school</p>
+                                </div>         
+         </p>
+          </div>
+       </div>
+    </section>
+</div>
+
+<!--- CHARACTER -->
+    <div class="w-full lg:w-1/2 px-5">
+      <section id="character" class="flex my-5 lg:mx-20 pt-16">
+        <div class="bg-gray-600 border-gray-600 rounded-xl text-white">
+          <div class="m-5 px-10">
+            <h2 class="pb-5 text-2xl">Skills!</h2>
+            <div class="tracking-wider">
+              <p>
+                <p>*Positive energy</p>
+                <p>*Digital knowledge</p>
+                <p>*Problem solving</p>
+                <p>*Communication</p>
+                <p>*Customer service</p>
+                <p>*Team player</p>
+                <p>*Strategic thinking</p>
+                <p>*Highly motivated</p>
+                <p>*Honesty</p>
+                <p>*Creativity</p>
+            </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>  
+  </div>  
+<!-- Section: Kontakt  -->
+<section id='contact' class="px-10 mx-5 mt-5 mb-20">
+    <div class="flex flex-col lg:flex-row">
+        <div class="lg:w-1/2 m-5">
+            <h2 class="text-3xl font-semibold">Contact</h2>
+            <p class="py-10 text-xl">Contact me if you'd like to collaborate with me!</p>
+            <div class="font-semibold py-10">
+                <h3>Jako Luik</h3>
+                <h3 class="py-3">jakoluik16@gmail.com</h3>
+                <h3>+372 5683 1433</h3>
+                <h3 class="py-3">Saaremaa, Kuressaare</h3>
+            </div>
+        </div>
+
+        <!-- Customer form -->
+        <form action="#" method="POST" class="lg:w-1/2 m-5" enctype="multipart/form-data">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-800 font-semibold mb-2">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" class="w-full px-4 py-2 border rounded-lg">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-800 font-semibold mb-2">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Your e-mail address" class="w-full px-4 py-2 border rounded-lg">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-800 font-semibold mb-2">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="4" class="w-full px-4 py-2 border rounded-lg"></textarea>
+            </div>
+            <button type="submit" class="bg-stone-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-stone-200 hover:text-white transition duration-300">Send</button>
+        </form>
+    </div>
+</section>
+
+        <!-- Footer -->
+ <footer class="bg-stone-500 text-white mt-auto">
+      <div class="container mx-auto px-4 py-8 text-center">
+        <p>&copy; 2024 Jako Luik. Vöörad ei näpi.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+
+
 </body>
 </html>
